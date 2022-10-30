@@ -1,0 +1,86 @@
+<form version="1.1" theme="dark">
+  <label>Birthday Form</label>
+  <fieldset submitButton="true" autoRun="false">
+    <input type="text" token="name" searchWhenChanged="false">
+      <label>Name</label>
+    </input>
+    <input type="dropdown" token="day" searchWhenChanged="false">
+      <label>Day</label>
+      <choice value="1">1</choice>
+      <choice value="2">2</choice>
+      <choice value="3">3</choice>
+      <choice value="4">4</choice>
+      <choice value="5">5</choice>
+      <choice value="6">6</choice>
+      <choice value="7">7</choice>
+      <choice value="8">8</choice>
+      <choice value="9">9</choice>
+      <choice value="10">10</choice>
+      <choice value="11">11</choice>
+      <choice value="12">12</choice>
+      <choice value="13">13</choice>
+      <choice value="14">14</choice>
+      <choice value="15">15</choice>
+      <choice value="16">16</choice>
+      <choice value="17">17</choice>
+      <choice value="18">18</choice>
+      <choice value="19">19</choice>
+      <choice value="20">20</choice>
+      <choice value="21">21</choice>
+      <choice value="22">22</choice>
+      <choice value="23">23</choice>
+      <choice value="24">24</choice>
+      <choice value="25">25</choice>
+      <choice value="26">26</choice>
+      <choice value="27">27</choice>
+      <choice value="28">28</choice>
+      <choice value="29">29</choice>
+      <choice value="30">30</choice>
+      <choice value="31">31</choice>
+    </input>
+    <input type="dropdown" token="month" searchWhenChanged="false">
+      <label>Month</label>
+      <choice value="jan">Jan</choice>
+      <choice value="feb">Feb</choice>
+      <choice value="mar">Mar</choice>
+      <choice value="apr">Apr</choice>
+      <choice value="may">May</choice>
+      <choice value="jun">Jun</choice>
+      <choice value="jul">Jul</choice>
+      <choice value="aug">Aug</choice>
+      <choice value="sep">Sep</choice>
+      <choice value="oct">Oct</choice>
+      <choice value="nov">Nov</choice>
+      <choice value="dec">Dec</choice>
+    </input>
+    <input type="text" token="email" searchWhenChanged="false">
+      <label>Email</label>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>|birthday $name$,$day$,$month$,$email$</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+    <panel>
+      <table>
+        <search>
+          <query>|bday</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <refresh>30s</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
+</form>
