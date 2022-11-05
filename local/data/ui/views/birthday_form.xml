@@ -59,9 +59,10 @@
   </fieldset>
   <row>
     <panel>
+      <title>Input data</title>
       <table>
         <search>
-          <query>|birthday $name$,$day$,$month$,$email$</query>
+          <query>|birthday $name$ $day$ $month$ $email$</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
         </search>
@@ -70,6 +71,7 @@
       </table>
     </panel>
     <panel>
+      <title>Employee details</title>
       <table>
         <search>
           <query>|bday</query>
