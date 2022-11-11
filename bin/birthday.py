@@ -8,7 +8,7 @@ def matching():
     s3=sys.argv[3]
     s4=sys.argv[4]
     
-    f=open("C:\\Program Files\\Splunk\\etc\\apps\\Birthday-Remainder\\birthday.txt","a")
+    f=open("birthday.txt","a")
     f.write(str(s1)+":"+str(s2)+":"+str(s3)+":"+str(s4))
     f.write("\n")
     f.close()

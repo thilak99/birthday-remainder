@@ -33,3 +33,18 @@ export = system
 [viewstates]
 access = read : [ * ], write : [ * ]
 export = system
+
+[app/ui]
+version = 9.0.1
+modtime = 1667026205.516604700
+
+[app/launcher]
+version = 9.0.1
+modtime = 1667026205.545859300
+
+[views/birthday_form]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = rahuman
+version = 9.0.1
+modtime = 1667647658.755818100
